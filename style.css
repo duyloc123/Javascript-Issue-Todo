@@ -1,0 +1,782 @@
+/* div{
+    background-color: rgb(243, 48, 48);
+    width: 200px;
+    height: 100px;
+    display: block;
+}
+
+span{
+    background-color: rgb(48, 211, 230);
+    width: 200px;
+    height: 100px;
+    display: block;
+} */
+
+/* #greeting p {
+    background-color: hsl(60, 83%, 74%);
+    padding: 10px;
+    display: none;
+}
+
+#greeting:hover p {
+    display:block;
+} */
+
+/* <!-- Pseudo Elements --> */
+/* h1::first-letter{
+    font-size:5rem;
+    font-style: italic;
+}
+
+p::first-line{
+    background-color:hsl(60, 87%, 72%);
+}
+
+p::selection{
+    color: white;
+    background-color:hsl(180, 88%, 51%);
+}
+
+
+#fruits li::after{
+    content: '//'
+}
+#fruits li::marker{
+    content: '...'
+} */
+
+/* Pagination */
+/* .pagination{
+    text-align: center;
+}
+
+.pagination a{
+    font-size:1.2rem;
+    text-decoration: none;
+    padding: 8px 15px;
+    display: inline-block;
+    color:black;
+}
+
+.pagination a.active{
+    background-color:hsl(180, 87%, 78%);
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.pagination a:hover:not(.active){
+    background-color:hsl(0, 1%, 63%);
+    border-radius: 5px;
+} */
+
+/* -----------Drop Menu ---------------*/
+/* .dropDown {
+    padding: 10px;
+}
+
+.dropDown button{
+    font-size:1.5rem;
+    padding:10px;
+    color:hsl(208, 69%, 81%);
+    border: none;
+    border-radius: 5px;
+    width: 100px;
+    cursor: pointer;
+}
+
+
+.dropDown a{
+    color:black;
+    text-decoration: none;
+    display: block;
+    padding: 10px 15px;
+}
+
+.dropDown .content{
+    display: none;
+    background-color:hsl(160, 82%, 76%);
+    position:absolute;
+    min-width: 150px;
+    box-shadow: 2px 2px 3px hsla(0, 1%, 26%, 0.786);
+}
+
+.dropDown:hover .content{
+    display: block;
+}
+
+.dropDown:hover button{
+    opacity: 0.5;
+}
+
+.dropDown a:hover{
+    background-color: hsl(0, 0%, 80%);
+} */
+
+/* ------------ Navigation Bar */
+/* h1{
+    text-align: center;
+}
+
+.navbar ul {
+    list-style-type: none;
+    background-color: hsl(0, 0%, 54%);
+    padding: 0px;
+    margin: 0px;
+    overflow: hidden;
+}
+
+.navbar ul a{
+    text-decoration: none;
+    color: white;
+    padding: 15px;
+    display: block;
+    text-align: center;
+}
+.navbar a:hover{
+    background-color:hsl(0,0%,20%);
+}
+.navbar li {
+    float: left;
+}
+main{
+    padding: 15px;
+} */
+
+/* Layout Website */
+/* *{
+    box-sizing: border-box;
+} */
+/* body{
+    margin: 0;
+    padding: 0;
+} */
+/* header{
+    background-color:rgb(152, 152, 152);
+    text-align: center;
+    padding: 10px;
+}
+.navbar{
+    background-color:rgb(89, 89, 89);
+    padding: 15px;
+}
+aside{
+    width: 20%;
+    float: left;
+    padding: 10px;
+}
+section{
+    width: 40%;
+    float: left;
+    padding: 10px;
+}
+article{
+    width: 40%;
+    float:left;
+    padding: 10px;
+}
+footer{
+    background-color: rgb(152,152,152);
+    display: block;
+    clear:both;
+    padding: 10px;
+    text-align: center;
+}
+@media screen and (max-width: 600px){
+    aside,section,article{
+        width: 100%;
+    }
+} */
+
+/* Image Gallery */
+/* .gallery{
+    display: inline-block;
+    border: 1px solid hsl(0, 0%, 66%);
+    margin: 5px;
+    width: 200px;
+}
+.gallery .description{
+    text-align: center;
+    padding: 5px;
+}
+.gallery:hover{
+    border: 1px solid hsl(0, 0%, 11%);
+}
+.gallery img{
+    width: 100%;
+    height: auto;
+} */
+
+/* Icons */
+/* .icons{
+    margin: 10px;
+    text-align: center;
+}
+.fa-solid.fa-house.fa-2xl{
+    color: gray;
+    margin-right: 10px;
+}
+.fa-twitter{
+    color:hsl(180, 92%, 58%);
+    margin-right: 10px;
+}
+.fa-youtube{
+    color:hsl(0, 100%, 55%);
+    margin-right: 10px;
+}
+.fa-facebook{
+    color:hsl(240, 95%, 57%);
+    margin-right: 10px;
+} */
+
+/* Flex */
+/* .container{
+    display: flex;
+    height: 700px;
+    border: 10px solid black; */
+    /* flex-direction:;  Trải thành hàng row trải thành cột col*/
+             /*  justify-content : Trải dọc theo chiều x 
+                 => flex-start: dính liền ở đầu trang >< flex-end: dính liền ở cuối trang
+                 => space-between: dãn cách ở giữa ra >< space-around (Khác nhau ở chỗ between từ phẩn tử thứ 1 không dãn)
+                 => space-event: không gian đồng đều */
+    /* align-items : Trải dọc theo chiều y
+                => baseLine: căn chỉnh chúng có cùng kích thước */
+                
+/* } */
+/* .box{
+    width: 150px;
+    height: 150px;
+    font-size: 2em;
+    text-align: center;
+    border-radius: 10px;
+}
+#box1{
+    background-color: hsl(0, 98%, 62%);
+}
+#box2{
+    background-color:hsl(180, 88%, 63%);
+}
+#box3{
+    background-color: hsl(120, 87%, 64%);
+}
+#box4{
+    background-color: hsl(271, 97%, 69%);
+} */
+
+/* Transform */
+/* #box1{
+    width: 250px;
+    height: 250px;
+    border: 5px solid;
+    font-size: 10em;
+    text-align: center;
+    background-color: rgb(97, 248, 97);
+
+    transform: translate(50px,50px); 
+} */
+
+/* .box{
+    width: 150px;
+    height: 150px;
+    margin: 10px;
+} */
+/* .blue{ */
+    /* transition-property: background-color; // liệt kê các thuộc tính muốn áp dụng animation
+    transition-duration: 2s; // Khoảng thời gian animation thực thi là bao nhiêu
+    transition-delay: 2s // Thay đổi thời gian khi thực hiện duration
+    transition-timing-function: ease-in-out // Hàm tính thời điểm thuộc tính đó có giá trị là bao nhiêu  */
+    /* transition-property: background-color;
+    transition-duration: 2s;
+    transition-timing-function: ease-in-out;
+    background-color: blue;
+    
+} */
+/* .blue:hover{
+    width: 250px;
+    background-color:red;
+    border-bottom: 5px solid;
+}
+.green{
+    background-color: green;
+} */
+
+/*  */
+/* .menu{
+    list-style-type: none;
+}
+.menu li{
+    display: inline-block;
+    position: relative;
+}
+.menu li::after{
+    width:0%;
+    height: 3px;
+    background-color: hsl(180, 87%, 64%);
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    transition: width 1s ease-in-out;
+}
+.menu li:hover::after{
+    width:100%;
+} */
+
+/* .box{
+    height: 100px;
+    margin: 10px;
+    border: 5px solid;
+    animation-name: loading;
+    animation-duration: 2s; */
+    /* animation-iteration-count: infinite; Số vòng lặp lại Infinite là vô tận */
+    /* animation-direction: alternate;  Chuyển đổi từ form tới to mượt mà hơn*/
+/* } */
+
+/* @keyframes loading{
+    from{
+        width:0px;
+        background-color:hsl(180, 89%, 78%);
+    }
+    to{
+        width:350px;
+        background-color:hsl(180, 100%, 50%);
+    }
+} */
+
+/*  */
+/* .box{
+    height:50px;
+    width: 50px;
+    border-top: 2px solid hsl(0, 98%, 61%);
+    border-bottom: 2px solid blue;
+    border-left: 2px solid yellow;
+    border-right: 2px solid green;
+    margin: 20px;
+    border-radius:50%;
+    animation: loading 2s infinite linear;
+}
+
+@keyframes loading{
+    to{
+        transform: rotate(360deg);
+    }
+} */
+
+/* Đơn vị đo  */
+/* em: tính theo cái thẻ cha font size , width nó sẽ tương ứng với font size của element của nó */
+/* html{
+    font-size: 20px;
+}
+.container{
+    border: 2px solid black;
+    width: 300px;
+    height: 500px;
+    font-size: 12px;
+} */
+
+/* rem viết tắt của từ viết tắt root em , nó sẽ lấy theo thẻ html nếu không thay đổi thì giá trị mặc định
+sẽ là 16px*/
+/* vw và vh nó sẽ tương ứng với % của trang web  */
+
+
+html {
+  /* 1rem = 10px */
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+* {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+body {
+  margin: 0 auto;
+  font-size: 1.6rem;
+  font-family: "Poppins", sans-serif;
+  line-height: 1.5;
+  position: relative;
+}
+
+input,
+textarea,
+select,
+button {
+  outline: none;
+  font-size: 1.6rem;
+  font-weight: normal;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+.error-mess {
+  width: 40rem;
+  height: 20rem;
+  background-color: #ccc;
+  color: #000;
+  text-align: center;
+  font-size: 2.2rem;
+  position: absolute;
+  left: 50%;
+  top: 15%;
+  transform: translate(-50%, -50%);
+  align-items: center;
+  justify-content: center;
+  display: none;
+}
+
+.header {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3rem;
+}
+
+.main {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  max-width: 84%;
+}
+
+.header-container {
+  justify-content: end;
+}
+
+.main-content {
+  width: 100%;
+}
+
+.app-title {
+  margin: 6rem auto 9rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.app-name {
+  font-size: 3.2rem;
+}
+
+.top-form-group {
+  margin-bottom: 6px;
+}
+
+.input-title {
+  font-size: 1.6rem;
+  margin-bottom: 10px;
+}
+
+.issue-input,
+.author-select,
+.severity-status {
+  width: 100%;
+  padding: 9px;
+  margin-bottom: 16px;
+  font-size: 1.6rem;
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+}
+
+#sort-value:focus,
+.search-box:focus,
+.issue-input:focus,
+.author-select:focus,
+.severity-status:focus {
+  outline: none;
+  box-shadow: 0 0 6px 2px #80bdff;
+  border-color: #80bdff;
+}
+
+.wrap-submit-btn {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+
+.btn {
+  min-width: 56px;
+  font-size: 1.6rem;
+  padding: 10px 14px;
+  background-color: #007bff;
+  align-items: center;
+  color: #fff;
+  border-radius: 6px;
+  border: 1px solid;
+  cursor: pointer;
+}
+
+hr {
+  border: 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.main-feature-group {
+  margin-bottom: 25px;
+}
+
+.list-feature-search-field {
+  margin-top: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.list-name {
+  font-size: 2.8rem;
+  font-weight: 500;
+  cursor: default;
+}
+
+.search-box {
+  max-width: 200px;
+  font-size: 1.6rem;
+  padding: 9px 10px;
+  border: 1px solid #ced4da;
+  border-radius: 3px;
+}
+
+.list-feature-filter {
+  display: flex;
+  align-items: center;
+}
+
+.feature-label {
+  width: 160px;
+}
+
+.group-btn {
+  display: flex;
+  align-items: center;
+}
+
+.filter-status-btn--all,
+.filter-status-btn--open,
+.filter-status-btn--close {
+  margin: 0 2px;
+  padding: 10px 0;
+  font-size: 1.4rem;
+}
+
+.filter-status-btn--open {
+  background-color: #28a745;
+}
+
+.filter-status-btn--close {
+  background-color: #17a2b8;
+}
+
+.list-feature-sort {
+  display: flex;
+  align-items: center;
+}
+
+#sort-value {
+  width: 160px;
+  margin-left: 2px;
+  padding: 9px;
+  margin-bottom: 16px;
+  font-size: 1.6rem;
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+}
+
+.issue-list__list {
+  margin-bottom: 24px;
+}
+
+.issue-list-item {
+  border-radius: 4px;
+  overflow: hidden;
+  border: 1px solid #ced4da;
+}
+
+.list-item-header {
+  width: 100%;
+  height: 50px;
+  font-size: 1.6rem;
+  background-color: #f7f7f7;
+  border-bottom: 1px solid #ced4da;
+  display: flex;
+  align-items: center;
+  padding: 16px 20px;
+}
+
+.list-item-status {
+  height: 20px;
+  border: 1px solid #6c757d;
+  border-radius: 4px;
+  background-color: #6c757d;
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #fff;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 10px;
+  padding: 4px 10px;
+}
+
+.list-item-content {
+  padding: 24px 20px;
+}
+
+.issue-name {
+  font-size: 2rem;
+  font-weight: 600;
+  cursor: default;
+  margin-bottom: 20px;
+}
+
+.list-item-severity {
+  height: 20px;
+  border: 1px solid #007bff;
+  border-radius: 4px;
+  background-color: #007bff;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #fff;
+  display: inline-flex;
+  flex-shrink: 1;
+  align-items: center;
+  justify-content: center;
+  padding: 8px;
+  display: none;
+}
+
+.list-item-group-btn {
+  display: flex;
+  justify-content: end;
+}
+
+.btn--delete {
+  background-color: #dc3545;
+  margin-left: 10px;
+  float:right;
+  /* transition: background-color 0.3s, border-color 0.3s; */
+}
+
+.btn:hover {
+  background-color: #0069d9;
+  border-color: #0062cc;
+}
+
+.filter-status-btn--open:hover {
+  background-color: #218838;
+  border-color: #1e7e34;
+}
+
+.filter-status-btn--close:hover {
+  background-color: #138496;
+  border-color: #117a8b;
+}
+
+.btn--delete:hover {
+  background-color: #c82333;
+  border-color: #bd2130;
+  /* transform: scale(1.1); */
+}
+
+.btn--signout {
+  padding: 8px 12px;
+  background-color: #ffffff;
+  color: #007bff;
+  border-radius: 16px;
+  border: 1px solid #007bff;
+}
+
+.btn--signout:hover {
+  /* background-color: #ccc; */
+  background-color: rgba(0, 0, 0, 0.2);
+  border-color: rgba(0, 0, 0, 0.2);
+}
+
+.loadingSpinnerContainer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 5000;
+  justify-content: center;
+  align-items: center;
+  display: none;
+}
+
+.loadingSpinner {
+  width: 6.4rem;
+  height: 6.4rem;
+  border: 8px solid;
+  border-color: #00cc66 transparent #00cc66 transparent;
+  border-radius: 50%;
+  animation: spin 1.2s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes popUpError {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.list-item-group-tabc {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.list-item-group-author {
+  display: flex;
+}
+
+.list-item-group-author img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+.issue-list ul li{
+  list-style-type: none;
+  border: 2px solid hsl(300, 90%, 77%);
+  border-radius: 15px;
+  padding: 20px;
+  margin-bottom: 10px;
+  display:flow-root;
+  box-shadow: 0px 0 2px 1px hsl(300, 74%, 74%);
+}
+th{
+  padding-left: 20px;
+  font-weight: 700;
+}
+td{
+  padding-left: 20px;
+  font-weight: 500;
+}
