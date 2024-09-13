@@ -1,139 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=devic  e-width, initial-scale=1.0" />
-    <title>ISSUES TRACKER APP</title>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Javascript Issue Tracker</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script defer type="text/javascript" src="/assets/js/index.js"></script>
+</head>
+<body class="px-4">
+  <h1 class="text-3xl font-bold uppercase text-center py-4">
+    Issue Tracker
+  </h1>
 
-    <link rel="stylesheet" href="assets/style.css" />
-  </head>
-  <body>
-    <div id="error-mess" class="error-mess"></div>
-    <div class="wrapper">
-      <header class="header">
-        <div class="container header-container">
-          <button id="signout" class="btn btn--signout">Sign out</button>
-        </div>
-      </header>
-      <div class="main">
-        <div class="container">
-          <div class="main-content">
-            <section class="app-title">
-              <h1 class="app-name">ISSUE TRACKER</h1>
-            </section>
+  <div class="max-w-screen-xl mx-auto">
+    <form>
+      <div class="mb-5">
+        <label for="title" class="block mb-2 text-sm font-medium text-gray-900">Title</label>
+        <input type="title" id="title" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 " placeholder="name@flowbite.com" required />
+      </div>
+      <div class="mb-5">
+        <label for="author" class="block mb-2 text-sm font-medium text-gray-900">Author</label>
+        <select id="author" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5">
+          <option value="tony">Tony</option>
+          <option value="hoa">Hoa</option>
+          <option value="loc">Loc</option>
+        </select>  
+      </div>
+      <div class="mb-5">
+        <label for="severity" class="block mb-2 text-sm font-medium text-gray-900">Severity</label>
+        <select id="severity" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5">
+          <option value="low">Low</option>
+          <option value="medium">Medium</option>
+          <option value="high">High</option>
+        </select> 
+      </div>
+      <div class="mb-5">
+        <label for="description" class="block mb-2 text-sm font-medium text-gray-900">Description</label>
+        <textarea id="description" rows="4" class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500" placeholder="Write your thoughts here..."></textarea>
+      </div>
+      <div class="text-right">
+        <button type="submit" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center ease-in duration-300" id="btn--add">Add</button>
+      </div>
+    </form>
+  
+    <hr class="my-5" />
+    <!-- List Issue , Search -->
+    <div class="mt-5">
+      <div class="flex flex-row justify-between">
+        <h1 class="text-[28px] text-black font-bold">List Issue</h1>
+        <div class="relative">
 
-            <section class="form">
-              <form action="" id="issueInputForm">
-                <div class="top-form">
-                  <div class="top-form-group">
-                    <!--row-->
-                    <div class="input-title">Title</div>
-                    <input
-                      id="inputIssueTitle"
-                      type="text"
-                      class="issue-input"
-                      placeholder="Title ..."
-                    />
-                  </div>
-                  <div class="top-form-group">
-                    <div class="input-title">Author</div>
-                    <select
-                      name=""
-                      id="author-select"
-                      class="author-select"
-                    >
-                      <option value="sunny@gmail.com">Sunny</option>
-                      <option value="tony@gmail.com">Tony</option>
-                    </select>
-                  </div>
+          <input type="text" id="search--description" class="h-full w-50 pr-8 pl-5 border-2 rounded z-0 focus:shadow focus:outline-none ease-out duration-300" placeholder="Search by description...">
 
-                  <div class="top-form-group">
-                    <div class="input-title">Severity</div>
-                    <select
-                      name=""
-                      id="severity-status"
-                      class="severity-status"
-                    >
-                      <option value="low">Low</option>
-                      <option value="medium">Medium</option>
-                      <option value="high">High</option>
-                    </select>
-                  </div>
-
-                  <div class="top-form-group wrap-submit-btn">
-                    <button type="submit" class="btn">Add</button>
-                  </div>
-                </div>
-
-                <hr />
-              </form>
-              <div class="main-feature">
-                <div class="main-feature-group">
-                  <div class="list-feature-search-field">
-                    <h2 class="list-name">List Issue</h2>
-                    <input
-                      type="input"
-                      id="search-box"
-                      class="search-box"
-                      placeholder="Search by description"
-                      autocomplete="off"
-                    />
-                  </div>
-                </div>
-                <div class="main-feature-group">
-                  <div class="list-feature-filter">
-                    <label for="" class="feature-label">Filter:</label>
-                    <div class="group-btn">
-                      <button
-                        id="all-status"
-                        value="all"
-                        class="btn filter-status-btn--all"
-                      >
-                        All
-                      </button>
-                      <button
-                        id="open-status"
-                        value="open"
-                        class="btn filter-status-btn--open"
-                      >
-                        Open
-                      </button>
-                      <button
-                        id="close-status"
-                        value="close"
-                        class="btn filter-status-btn--close"
-                      >
-                        Close
-                      </button>
-                    </div>
-                  </div>
-                </div>
-                <div class="main-feature-group">
-                  <div class="list-feature-sort">
-                    <label for="" class="feature-label">Order By:</label>
-                    <select name="" id="sort-value">
-                      <option value="">Choose...</option>
-                      <option value="asc">ASC</option>
-                      <option value="desc">DESC</option>
-                    </select>
-                  </div>
-                </div>
-              </div>
-            </section>
-
-            <section class="issue-list">
-              <ul id="issuesList" class="issue-list__list"></ul>
-            </section>
+          <div class="absolute top-4 right-3">
+              <i class="fa fa-search text-gray-400 z-20 hover:text-gray-500"></i>
           </div>
+
+      </div>
+      </div>
+    </div>
+    <!-- Filter -->
+    <div class="mt-5">
+      <div class="flex flex-row items-center max-sm:justify-between">
+        <h1 class="text-black font-bold text-[20px] w-[160px]">Filter:</h1>
+        <!-- All, Open, Close -->
+         <div class="">
+          <button type="button" id="btn--all" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800 ease-in duration-300">All</button>
+          <button type="button" id="btn--open" class="focus:outline-none text-white bg-green-700 hover:bg-green-800 focus:ring-4 focus:ring-green-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800 ease-in duration-300">Open</button>
+          <button type="button" id="btn--close" class="focus:outline-none text-white bg-red-700 hover:bg-red-800 focus:ring-4 focus:ring-red-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 dark:bg-red-600 dark:hover:bg-red-700 dark:focus:ring-red-900 ease-in duration-300">Close</button>
+         </div>
+      </div>
+    </div>
+    <!-- Order By -->
+    <div class="mt-5">
+      <div class="flex flex-row items-center max-sm:justify-between">
+        <h1 class="text-black text-[20px] font-bold w-[160px]">Order by:</h1>
+        <div>
+            <select class="w-[150px] bg-white border border-gray-300 text-black text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block p-2.5 dark:bg-white dark:border-gray-600 dark:placeholder-gray-400 dark:text-black dark:focus:ring-blue-500 dark:focus:border-blue-500 outline-none" id="sortValue">
+              <option selected>Choose...</option>
+              <option value="asc">ASC</option>
+              <option value="desc">DESC</option>
+            </select>
         </div>
       </div>
     </div>
-
-    <div id="loadingSpinnerContainer" class="loadingSpinnerContainer">
-      <div class="loadingSpinner"></div>
+    <div id="issuesList" class="mt-10">
     </div>
-
-    <script src="/assets/main.js"></script>
-  </body>
+  </div>
+</body>
 </html>
